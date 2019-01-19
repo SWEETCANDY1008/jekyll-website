@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <div id="page-wrapper">
+        <!-- 사이드바 -->
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+            <a href="/">Home</a>
+            </li>            
+            {% assign sorted = site.posts | sort:"date" %}
+            {% for post in sorted %}
+            
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- /사이드바 -->
+        
+        <!-- 본문 -->
+        <div class="page-content">
+            {{ content }}
+        </div>
+    </div>        
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
