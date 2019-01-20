@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2019-01-20-GongSu01_Lecture_Intro"
+title:  "GongSu01_Lecture_Intro"
 date:  2019-01-20 12:59:29 +0900
 categories: jekyll update
 ---
