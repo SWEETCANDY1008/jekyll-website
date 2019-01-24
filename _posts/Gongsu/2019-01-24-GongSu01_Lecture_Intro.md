@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "4.1232"
-date:   2019-01-18 12:59:29 +0900
-categories: jekyll update
+title: GongSu01_Lecture_Intro
+date: 2019-01-24 13:33:38 +0900
+categories: Gongsu
 ---
-
 <h1>강의 소개</h1>
 <h4>수정 사항</h4>
 <ul>
@@ -72,7 +71,7 @@ categories: jekyll update
 cellspacing="20">
 <tr>
 <td>
-<img src="{{ "assets/images/python/tiobe-index.jpg" | relative_url }}" style="width:600">
+<img src="{{ "assets/images/tiobe-index.jpg" | relative_url }}" style="width:600">
 </td>
 </tr>
 </table>
@@ -88,7 +87,7 @@ index/">TIOBE Index</a></p>
 <tr>
 <td>
 <img
-src="{{ "assets/images/python/KDnuggets-software-poll-2016.jpg" | relative_url }}" style="height:60">
+src="{{ "assets/images/KDnuggets-software-poll-2016.jpg" | relative_url }}" style="height:60">
 </td>
 </tr>
 </table>

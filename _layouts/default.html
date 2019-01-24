@@ -12,20 +12,54 @@
           <ul class="sidebar-nav">
             <li class="sidebar-brand">
             <a href="{{ site.baseurl }}">Home</a>
-            </li>            
-            {% assign sorted = site.posts | sort:"date" %}
-            {% for post in sorted %}
-            
-            <li>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
-            {% endfor %}
+            
+
+            
+            
+
+              {% for category in site.categories %} 
+              <li><a href="#" onclick="hiding('{{ category | first }}');">{{ category | first }}</a></li>
+              <ul id="{{ category | first }}">
+                  {% assign sorted = category.last | sort:"date" %}
+                  {% for post in sorted %}
+                  <li style="padding-left: 10px;">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </li>
+                  {% endfor %}
+              </ul>
+              {% endfor %}
+
+
+
+
+
+
+            <!-- <li><a href="#" onclick="hiding('gongsu');">{{ site.categories }}</a></li>
+              <ul id="gongsu">
+                  {% assign sorted = site.categories.Gongsu | sort:"date" %}
+                  {% for post in sorted %}
+                  <li style="padding-left: 10px;">
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </li>
+                  {% endfor %}
+              </ul> -->
+
+
+
+
+
+
+            </li>
           </ul>
         </div>
         <!-- /사이드바 -->
         
         <!-- 본문 -->
         <div class="page-content">
+            <button id="button" onclick="hiding2('sidebar-wrapper')">
+                접기, 펴기
+              </button>
             {{ content }}
         </div>
     </div>        
