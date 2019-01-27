@@ -1,8 +1,8 @@
 ---
 layout: post
 title: GongSu01_Lecture_Intro
-date: 2019-01-24 20:01:47 +0900
-categories: Gongsu
+date: 2019-01-26 22:34:45 +0900
+categories: qwerty
 ---
 <h1>강의 소개</h1>
 <h4>수정 사항</h4>
@@ -66,7 +66,7 @@ categories: Gongsu
 <table cellspacing="20">
 <tr>
 <td>
-<img src="{{ "assets/images/tiobe-index.jpg" | relative_url }}" style="width:600">
+<img src="{{ "assets/images/python/tiobe-index.jpg" | relative_url }}" style="width:600">
 </td>
 </tr>
 </table>
@@ -79,7 +79,7 @@ categories: Gongsu
 <table cellspacing="20">
 <tr>
 <td>
-<img src="{{ "assets/images/KDnuggets-software-poll-2016.jpg" | relative_url }}" style="height:60">
+<img src="{{ "assets/images/python/KDnuggets-software-poll-2016.jpg" | relative_url }}" style="height:60">
 </td>
 </tr>
 </table>

@@ -15,7 +15,8 @@ margin-left: -250px;
 background: rgb(255, 255, 255);
 overflow-x: hidden;
 overflow-y: auto;
-border-right: solid rgb(126, 126, 126)
+border-right: solid rgb(126, 126, 126);
+border-top: solid rgb(126, 126, 126);
 }
 
 #page-content-wrapper {
@@ -24,44 +25,46 @@ padding: 20px;
 }
 /* 사이드바 스타일 */
 
-.sidebar-nav {
+#sidebar-nav {
 width: 350px;
 margin: 0;
 padding: 0;
 list-style: none;
 }
 
-.sidebar-nav ul {
+#sidebar-nav ul {
   list-style: none;
   padding-left: 0px;
 }
 
-.sidebar-nav li {
+#sidebar-nav ul li:active {
+  background: rgba(0, 0, 0, 0.637);
+}
+
+#sidebar-nav li {
 font-size: 12px;
 text-indent: 1.5em;
 line-height: 2.8em;
 }
 
-.sidebar-nav li a {
+#sidebar-nav li a {
 display: block;
 text-decoration: none;
 color: rgb(0, 0, 0);
 }
 
-.sidebar-nav li:hover {
-color: #fff;
-background: rgba(46, 129, 255, 0.637);
+#sidebar-nav li:hover {
+
+background: rgba(100, 100, 100, 0.637);
 }
 
-.sidebar-nav > .sidebar-brand {
+#sidebar-nav li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#sidebar-nav > .sidebar-brand {
 font-size: 1.3em;
 line-height: 3em;
-}
-
-
-
-.page-content {
-  margin-left: 50px;
 }
 
 .post-content p {
@@ -73,16 +76,66 @@ h1, h2, h3 {
   border-bottom: 1px solid rgb(126, 126, 126)
 }
 
-.page-content {
-  margin-left: 200px;
+#page .page-content .page-list ul {
+  margin-left: 0px;
 }
 
-code {
-  border: solid 1px #eaeaea;
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
+#page .page-content .page-list ul li {
+  float: left;
+  list-style: none;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+
+.page-content {
+  margin-left: 450px;
+  margin-right: 100px;
+}
+
+pre {
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
   border-radius: 3px;
+  border: solid 1px #eaeaea;
+  padding: 10px;
+  white-space: pre-line;
+}
+
+pre code {
+  white-space: pre-line;
+}
+
+blockquote {
+  white-space: pre-line;
+  border-radius: 0;
+  font-size: 13px;
+  background-color: #f8f8f8;
+  color: #000;
+  margin: 0px;
+  padding: 10px;
+}
+
+#sidebar-wrapper div {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 350px;
+  border-right: solid #7e7e7e;
+  border-bottom: solid #7e7e7e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#sidebar-wrapper div a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin:10px;
+}
+
+
+img {
+  width: 1000px;
+  height:500px;
 }
