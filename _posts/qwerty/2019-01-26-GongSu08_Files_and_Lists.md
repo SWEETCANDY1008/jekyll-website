@@ -20,14 +20,14 @@ categories: qwerty
 <ul>
 <li>
 <p>사용 형태: 대괄호 사용
-</blockquote>
+<blockquote>
 even_numbers_list = [2, 4, 6, 8, 10]
 todays_datatypes_list = ['list', 'tuple', 'dictionary']
 </blockquote></p>
 </li>
 <li>
 <p>특징: 임의의 자료형 값들을 섞어서 항목으로 사용 가능
-</blockquote>
+<blockquote>
 mixed_list = [1, 'abs', [2.1, 4.5]]
 </blockquote></p>
 </li>
@@ -53,7 +53,7 @@ mixed_list = [1, 'abs', [2.1, 4.5]]
 <h2>오늘의 주요 예제</h2>
 <p><code>data</code> 디렉토리에 위치한
 <code>scores_list.txt</code> 파일은 선수 여덟 명의 점수를 담고 있다.</p>
-<p></blockquote>txt
+<p><blockquote>txt
 Name    Score
 player1 21.09 
 player2 20.32 
@@ -65,7 +65,7 @@ player7 21.20
 player8 22.16
 </blockquote></p>
 <p>목표: 위 파일로부터 1~3등 선수의 점수를 아래와 같이 확인하기
-</blockquote>txt
+<blockquote>txt
 1등 23.29 
 2등 22.97 
 3등 22.16 
